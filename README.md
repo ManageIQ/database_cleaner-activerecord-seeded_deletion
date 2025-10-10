@@ -94,7 +94,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jrafanie/database_cleaner-activerecord-seeded_deletion. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ManageIQ/database_cleaner-activerecord-seeded_deletion. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
