@@ -1,6 +1,6 @@
 # DatabaseCleaner::ActiveRecord::SeededDeletion
 
-This gem provides a `SeededDeletion` strategy for [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) that deletes all records from tables except those that existed before the strategy was instantiated. It extends database_cleaner-activerecord's Deletion strategy.
+This gem provides a `SeededDeletion` strategy for [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) that deletes all records from tables except those that existed before the strategy was instantiated. It extends [database_cleaner-activerecord](https://github.com/DatabaseCleaner/database_cleaner-active_record)'s deletion strategy.
 
 This is particularly useful for tests that need seeded data to be present, such as integration or end-to-end tests that rely on seed data for proper functionality.
 
@@ -64,6 +64,10 @@ end
 ```ruby
 # config/initializers/cypress_on_rails.rb
 if defined?(CypressOnRails)
+  CypressOnRails.configure do |c|
+    # See the https://github.com/shakacode/cypress-playwright-on-rails docs for configuration
+  end
+
   require 'database_cleaner-activerecord-seeded_deletion'
   DatabaseCleaner[:active_record].strategy = DatabaseCleaner::ActiveRecord::SeededDeletion.new
 end
@@ -90,7 +94,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/DatabaseCleaner/database_cleaner-activerecord-seeded_deletion. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jrafanie/database_cleaner-activerecord-seeded_deletion. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
