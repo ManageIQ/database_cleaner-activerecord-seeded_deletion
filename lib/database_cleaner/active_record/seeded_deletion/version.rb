@@ -1,6 +1,6 @@
 module DatabaseCleaner
   module ActiveRecord
-    class SeededDeletion
+    module SeededDeletionVersion
       VERSION = "0.1.0"
     end
   end

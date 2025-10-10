@@ -6,6 +6,8 @@ module DatabaseCleaner
     # SeededDeletion is a strategy that deletes all records from tables except those that existed before it was instantiated
     # This is useful for tests that need the seeded data to be present.
     class SeededDeletion < Deletion
+      VERSION = SeededDeletionVersion::VERSION
+
       def clean
         connection.transaction(:requires_new => true) do
           super

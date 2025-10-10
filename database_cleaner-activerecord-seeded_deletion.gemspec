@@ -2,7 +2,7 @@ require_relative "lib/database_cleaner/active_record/seeded_deletion/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "database_cleaner-activerecord-seeded_deletion"
-  spec.version       = DatabaseCleaner::ActiveRecord::SeededDeletion::VERSION
+  spec.version       = DatabaseCleaner::ActiveRecord::SeededDeletionVersion::VERSION
   spec.authors       = ["ManageIQ Team"]
   spec.email         = ["contact@manageiq.org"]
 
