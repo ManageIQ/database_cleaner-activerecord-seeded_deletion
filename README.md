@@ -1,6 +1,6 @@
 # DatabaseCleaner::ActiveRecord::SeededDeletion
 
-This gem provides a `SeededDeletion` strategy for [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) that deletes all records from tables except those that existed before the strategy was instantiated.
+This gem provides a `SeededDeletion` strategy for [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) that deletes all records from tables except those that existed before the strategy was instantiated. It extends database_cleaner-activerecord's Deletion strategy.
 
 This is particularly useful for tests that need seeded data to be present, such as integration or end-to-end tests that rely on seed data for proper functionality.
 
